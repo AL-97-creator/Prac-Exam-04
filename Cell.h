@@ -20,7 +20,7 @@ public:
     char getType(){ 
         return type; 
     };
-    void setPosition(int x, int y){ 
+    void setPos(int x, int y){ 
         position = std::make_tuple(x, y); 
     }
     void setType(char type){
