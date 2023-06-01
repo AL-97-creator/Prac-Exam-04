@@ -10,6 +10,6 @@ int main() {
     Trap B(3,3);
     A.move(3,3);
     B.apply(A);
-    cout << A.getType() <<endl;
+    cout << A.getType() << " " << B.getType()<<endl;
     return 0;
 }
