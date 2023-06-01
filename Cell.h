@@ -4,11 +4,9 @@
 #include <tuple>
 
 class Cell {
-protected:
+public:
     std::tuple<int, int> position;
     char type;
-
-public:
     Cell(int x, int y, char type){
         position = std::make_tuple(x, y);
         this->type = type;

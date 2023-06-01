@@ -9,6 +9,6 @@ int main() {
     Trap B(3,3);
     Character A(3,3);
     B.apply(A);
-    cout << A.getType() << " " << B.isActive()<<endl;
+    cout << " " << A.getType() << " " << B.isActive()<<endl;
     return 0;
 }
