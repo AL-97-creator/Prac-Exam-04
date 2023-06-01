@@ -9,8 +9,15 @@ class Trap : public Cell, Effect{
 public:
     Trap() : Cell(0, 0, 'T') {}
     Trap(int x, int y) : Cell(x, y, 'T') {}
+    bool active;
+    bool getActive(){
+        return active;
+    }
+    void setActive(bool active){
+        this->active=active;
+    }
     bool isActive() {
-        if(Trap::getType()=='T'){
+        if(Trap::getActive() == 1){
             return true;
         }else{
             return false;
@@ -18,7 +25,7 @@ public:
     }
     void apply(Cell &cell){
         cell.setType('T');
-        Trap::setType('0');
+        Trap::setActive(false);
     }
 };
 
