@@ -6,10 +6,9 @@
 using namespace std;
 
 int main() {
-    Character A;
     Trap B(3,3);
-    A.move(3,3);
+    Character A(3,3);
     B.apply(A);
-    cout << A.getType() << " " << B.getType()<<endl;
+    cout << A.getType() << " " << B.isActive()<<endl;
     return 0;
 }

@@ -2,8 +2,9 @@
 #define TRAP_H
 
 #include "Effect.h"
+#include "Character.h"
 
-class Trap : public Cell{
+class Trap : public Cell, Effect{
 public:
     Trap() : Cell(0, 0, 'T') {}
     Trap(int x, int y) : Cell(x, y, 'T') {}
@@ -15,7 +16,7 @@ public:
         }
     }
     void apply(Cell &cell){
-        Cell::setType('0');
+        Cell::setType('T');
         Trap::setType('0');
         Trap::isActive();
     }
