@@ -16,7 +16,7 @@ public:
     }
     void apply(Cell &cell){
         Cell::setType('C');
-        Trap::setType('T')
+        Trap::setType('T');
         Trap::isActive();
     }
 };
