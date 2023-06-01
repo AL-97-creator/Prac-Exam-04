@@ -18,7 +18,7 @@ public:
     }
     void apply(Cell &cell){
         cell.setType('T');
-        Trap::setType('X');
+        Trap::setType('0');
     }
 };
 
